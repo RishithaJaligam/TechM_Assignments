@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Day Time</title>
+</head>
+<body>
+    </div>
+    <script>
+        var today = new Date();
+        var day = today.getDay();
+        var days = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+        var hour = today.getHours();
+        var minute = today.getMinutes();
+        var second = today.getSeconds();
+        let meridian = hour >= 12 ? "PM" : "AM";
+        hours = hour % 12 || 12;
+        console.log("Today is : " + days[day]);
+        console.log(`Current time is: ${hours} ${meridian}: ${minute}:${second}`);
+</script>
+</body>
+</html>

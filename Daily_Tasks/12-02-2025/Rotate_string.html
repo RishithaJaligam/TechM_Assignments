@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     function rotateString()
+     {
+        var str="digiterati";
+        let arr = str.split(""); 
+        setInterval(() => {     
+        let lastChar = arr.pop(); 
+        arr.unshift(lastChar); 
+        console.log(arr.join("")); 
+    }, 500);
+     }
+     rotateString();
+    </script>
+</body>
+</html>

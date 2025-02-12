@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function sort(a, b, c) {
+        let sorted;
+    
+        if (a>=b && a>=c) {
+            if (b>=c) {
+                sorted = `${a}, ${b}, ${c}`;
+            } else {
+                sorted = `${a}, ${c}, ${b}`;
+            }
+        } else if (b>=a && b>=c) {
+            if (a>=c) {
+                sorted = `${b}, ${a}, ${c}`;
+            } else {
+                sorted = `${b}, ${c}, ${a}`;
+            }
+        } else {
+            if (a>=b) {
+                sorted = `${c}, ${a}, ${b}`;
+            } else {
+                sorted= `${c}, ${b}, ${a}`;
+            }
+        }
+    
+        alert(`Sorted order: ${sorted}`);
+    }
+    sort(0, -1, 4);     
+    </script>
+</body>
+</html>

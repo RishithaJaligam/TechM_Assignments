@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function getCurrentDate() {
+        const now = new Date();
+    
+        let day = now.getDate();
+        let month = now.getMonth() + 1; // Months are zero-based (0 = January)
+        let year = now.getFullYear();
+        day = day < 10 ? '0' + day : day;
+        month = month < 10 ? '0' + month : month;
+        var today= `${month}-${day}-${year}`; 
+        console.log(today);
+        today = `${month}/${day}/${year}`; 
+        console.log(today);
+        today = `${day}-${month}-${year}`; 
+        console.log(today);
+        today = `${day}/${month}/${year}`; 
+        console.log(today);
+    }
+    getCurrentDate();
+</script>
+   
+</body>
+</html>
