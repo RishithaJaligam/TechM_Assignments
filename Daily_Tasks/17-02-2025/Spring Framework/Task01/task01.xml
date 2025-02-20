@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+    <bean id="student" class="task01.Student">
+        <constructor-arg value="101"/>
+        <constructor-arg value="Vishal"/>
+        <constructor-arg value="Computer Science"/>
+    </bean>
+
+    <bean id="studentService" class="task01.StudentServiceImpl">
+        <property name="student" ref="student"/>
+    </bean>
+
+</beans>

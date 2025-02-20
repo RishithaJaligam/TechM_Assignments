@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+    <bean id="apple" class="task03.Product">
+        <constructor-arg value="Apple"/>
+        <constructor-arg value="1.5"/>
+        <constructor-arg value="100"/>
+    </bean>
+
+    <bean id="banana" class="task03.Product">
+        <constructor-arg value="Banana"/>
+        <constructor-arg value="0.8"/>
+        <constructor-arg value="150"/>
+    </bean>
+
+    <bean id="orange" class="task03.Product">
+        <constructor-arg value="Orange"/>
+        <constructor-arg value="1.2"/>
+        <constructor-arg value="80"/>
+    </bean>
+
+    <bean id="grape" class="task03.Product">
+        <constructor-arg value="Grape"/>
+        <constructor-arg value="2.0"/>
+        <constructor-arg value="50"/>
+    </bean>
+
+    <bean id="inventory" class="task03.Inventory">
+        <constructor-arg>
+            <list>
+                <ref bean="apple"/>
+                <ref bean="banana"/>
+                <ref bean="orange"/>
+                <ref bean="grape"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+    <bean id="apple" class="task05.Item">
+        <property name="name" value="Apple"/>
+        <property name="price" value="1.5"/>
+        <property name="quantity" value="100"/>
+    </bean>
+
+    <bean id="banana" class="task05.Item">
+        <property name="name" value="Banana"/>
+        <property name="price" value="0.8"/>
+        <property name="quantity" value="150"/>
+    </bean>
+
+    <bean id="orange" class="task05.Item">
+        <property name="name" value="Orange"/>
+        <property name="price" value="1.2"/>
+        <property name="quantity" value="80"/>
+    </bean>
+
+    <bean id="grape" class="task05.Item">
+        <property name="name" value="Grape"/>
+        <property name="price" value="2.0"/>
+        <property name="quantity" value="50"/>
+    </bean>
+
+</beans>
