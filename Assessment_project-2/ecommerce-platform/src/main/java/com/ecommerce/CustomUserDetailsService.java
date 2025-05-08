@@ -23,7 +23,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         return User.builder()
                 .username(user.getUsername())
                 .password(user.getPassword())
-                .roles(user.getRole().replace("ROLE_", "")) // remove "ROLE_" prefix while setting roles
+                .roles(user.getRole().replace("ROLE_", "")) 
                 .build();
     }
 }
